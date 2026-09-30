@@ -1,6 +1,8 @@
 import { IconArrowLeft } from "@tabler/icons-react";
 import { Link, useParams } from "react-router";
 
+import MedicinesPage from "@/components/medicines";
+
 const sectionNames: Record<string, string> = {
   medicines: "Medicines",
   refill: "Medicine refill",
@@ -15,6 +17,8 @@ export function meta({ params }: { params: { section?: string } }) {
 
 export default function SectionPlaceholder() {
   const { section = "" } = useParams();
+  if (section === "medicines") return <MedicinesPage />;
+
   const title = sectionNames[section] ?? "This page";
 
   return (

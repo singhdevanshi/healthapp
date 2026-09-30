@@ -39,6 +39,9 @@ function threadIdFromPath(pathname: string): string | null {
 
 function viewForPath(pathname: string): string {
   if (pathname === "/") return "home";
+  if (pathname === "/medicines" || pathname === "/refill") return "medicines";
+  if (pathname === "/appointments") return "appointments";
+  if (pathname === "/plan") return "plan";
   return "home";
 }
 
@@ -68,4 +71,3 @@ function routerPath(path: string): string {
   }
   return path;
 }
-
