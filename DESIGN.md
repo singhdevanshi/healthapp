@@ -38,14 +38,14 @@ visual direction — read and preserve them on every subsequent build; do not
 re-derive a new direction. The first UI pass must fill these fields in as
 part of that build, not leave them as an empty template.
 
-- Product mode: `operate` | `read` | `persuade` | `experience`
-- Audience and cadence:
-- Visual world (name + the feeling it creates):
-- Palette family + neutral undertone:
-- Type treatment:
-- Composition:
-- Shape language:
-- Anti-references (defaults this app must not drift toward):
+- Product mode: `operate`
+- Audience and cadence: People checking daily medicines, appointments, and wellness tasks, including people with low vision.
+- Visual world (name + the feeling it creates): Evergreen companion — calm, grounded, warm, and reassuring.
+- Palette family + neutral undertone: Pine green with warm cream-white, soft sage, and charcoal; amber and brick are reserved for labeled alerts.
+- Type treatment: Sans-first, bold and highly legible, with a 20px minimum body size and user-controlled scaling.
+- Composition: Focused daily dashboard with one clear next step and a persistent four-destination bottom navigation.
+- Shape language: Soft utility surfaces, generous spacing, rounded corners, and clear high-visibility focus outlines.
+- Anti-references (defaults this app must not drift toward): Pure-white page backgrounds, small or thin text, icon-only actions, color-only status, dense clinical dashboards, and decorative medical claims.
 
 ## Agent-native is structural, not visual
 
@@ -60,7 +60,7 @@ Surface And Page Boundaries so the surfaces are wired correctly.
 ## Guardrails
 
 - Keep semantic token names and shared component seams intact; express the
-  direction through token *values*, type, spacing, and composition — not by
+  direction through token _values_, type, spacing, and composition — not by
   forking the design system.
 - Density comes from data, not prose. Subtract explanatory chrome; never
   subtract the visual craft that makes the app impressive.

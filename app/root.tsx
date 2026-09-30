@@ -11,7 +11,6 @@ import type { LinksFunction } from "react-router";
 
 import { Layout as AppLayout } from "@/components/layout/Layout";
 import { AppToolkitProvider } from "@/components/ui/toolkit-provider";
-
 import { useNavigationState } from "@/hooks/use-navigation-state";
 import { APP_NAME, APP_TITLE } from "@/lib/app-config";
 import { TAB_ID } from "@/lib/tab-id";
@@ -36,15 +35,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
     <html lang="en" suppressHydrationWarning>
       <head>
         <meta charSet="utf-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script
           suppressHydrationWarning
           dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }}
         />
-        <meta name="theme-color" content="#18181B" />
+        <meta name="theme-color" content="#FBF9F3" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta
           name="apple-mobile-web-app-status-bar-style"
